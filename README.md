@@ -1,115 +1,105 @@
-🚀 Document Conversion Module
-PDF ⇄ Word Conversion Made Simple, Fast & Fun
+# 🚀 Document Conversion Module
+### PDF ⇄ Word Conversion Made Simple, Fast & Fun
 
-Welcome to the Document Conversion Module, where your files get a makeover!
+Welcome to the **Document Conversion Module**, where your files get a makeover!  
 Turn PDFs into Word documents or convert Word files into polished PDFs — all inside one sleek interface.
 
-🎯 Features at a Glance
-🔄 PDF ➜ Word Conversion
+---
 
-Want to edit a PDF like a normal human?
+## 🎯 Features at a Glance
+
+### 🔄 PDF ➜ Word Conversion
+Want to edit a PDF like a normal human?  
 Now you can.
 
-Extracts and converts PDF text into .docx
+- Extracts and converts PDF text into `.docx`
+- Supports multi-page PDFs
+- Creates clean, structured Word documents
+- Fast, lightweight, and simple to use
 
-Supports multi-page PDFs
+> ⚠️ **Note:** Complex layouts, tables, and images may not fully convert. Best results with text-heavy PDFs.
 
-Creates clean, structured Word documents
+---
 
-Fast, lightweight, and super simple to use
-
-⚠️ Note: Complex layouts, images, or tables may not fully carry over. Text-focused PDFs work best.
-
-🔄 Word ➜ PDF Conversion
-
+### 🔄 Word ➜ PDF Conversion
 Lock in your formatting with a smooth PDF export.
 
-Converts .docx / .doc to PDF
+- Converts `.docx` / `.doc` to PDF
+- Preserves formatting as much as possible
+- Powered by **Apache POI** + **XDocReport**
+- Handles even complex Word documents
 
-Preserves formatting as much as possible
+> ⚠️ Custom fonts may be replaced if unavailable on the server.
 
-Uses Apache POI + XDocReport for high-quality output
+---
 
-Handles even complex Word documents
+## 🎨 User Interface Enhancements
 
-⚠️ Custom fonts may get substituted if not available on the server.
+### 🗂️ New “Document Conversion” Tab
+- Dedicated tab for all conversion operations
+- Choose between **PDF → Word** and **Word → PDF**
+- Clean and intuitive radio button workflow
 
-🎨 Updated & Interactive User Interface
-🗂️ New “Document Conversion” Tab
+### 🔧 Adaptive Upload Area
+- Upload field updates based on selected conversion type
+- Shows supported file formats
+- Clear progress indicators and feedback messages
 
-The UI now includes its very own conversion hub:
+### 📥 Download + Cleanup
+- Converted files download instantly
+- Automatic cleanup of temporary files
+- Correct MIME/content-type handling
 
-Choose between PDF → Word or Word → PDF
+---
 
-Intuitive radio button selection
+## 🛠️ Technical Implementation
 
-Clean, simple, user-friendly workflow
+### 🧩 Backend (Spring Boot)
+- Added **Apache POI** for Word processing
+- Integrated **XDocReport** for Word → PDF conversion
+- Introduced `DocumentConversionService`
+- New REST endpoints for conversion workflows
 
-🔧 Adaptive Upload Area
+### 💻 Frontend (Next.js)
+- Added dedicated API routes for document conversion
+- UI components for conversion selection
+- Drag-and-drop file uploads
+- Friendly success/error notifications
 
-Depending on your selected conversion:
+---
 
-File upload field adjusts automatically
+## ⚠️ Limitations
 
-Shows allowed file types
+### PDF → Word
+- Focuses on text extraction
+- Visual formatting, images, and tables may not be perfect
 
-Clear progress and feedback indicators
+### Word → PDF
+- Advanced Word styles may render slightly differently
+- Missing fonts may cause substitution
 
-📥 Download + Auto-Cleanup
+---
 
-Converted files download instantly
+## 🧪 How to Use
 
-Temporary files are auto-cleaned
+1. Open the **Document Conversion** tab.
+2. Choose your conversion direction:
+   - **PDF → Word**
+   - **Word → PDF**
+3. Upload the appropriate file.
+4. Click **Convert**.
+5. Download your freshly converted document.
 
-Correct content-type mapping for all formats
+---
 
-🛠️ Technical Implementation
-🧩 Backend (Spring Boot)
+## 💡 Bonus
+This module works seamlessly alongside your **file compression features**, making your app feel like a mini Adobe toolkit — minus the subscription. 😄
 
-Added Apache POI for Word handling
+---
 
-Integrated XDocReport for PDF generation
+If you want:
+- A more professional README  
+- A version with GitHub badges  
+- Or a README with screenshots  
 
-New DocumentConversionService
-
-Dedicated REST endpoints for conversion tasks
-
-💻 Frontend (Next.js)
-
-New API routes for document conversion
-
-Conversion direction selection UI
-
-Drag-and-drop file uploads
-
-Clean success / error handling
-
-⚠️ Limitations
-
-Before you try converting your 500-page fancy brochure… here’s the honest truth:
-
-PDF → Word
-
-Focuses on text extraction
-
-Complex elements (tables, images) may not be perfect
-
-Word → PDF
-
-Very advanced Word features may behave differently
-
-Missing fonts may cause slight visual changes
-
-🧪 How to Use
-
-Go to the Document Conversion tab
-
-Select your conversion direction
-– PDF ➜ Word
-– Word ➜ PDF
-
-Upload your file
-
-Hit Convert
-
-Download your transformed masterpiece
+Just tell me!
